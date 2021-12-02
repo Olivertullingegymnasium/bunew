@@ -1,0 +1,14 @@
+.backgrond{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.allt{
+    background: radial-gradient(rgb(247, 139, 139), rgb(184, 46, 4));
+    border-radius: 400px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 535px;
+    margin-left: 535px;
+    padding: 250px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Html forms</title>
+
+<link rel="stylesheet" href="rödprick.css">
+
+</head>
+
+
+<body class="blå">
+  
+  <h1>Fill out for a ticket</h1>
+  
+  
+  
+    <form>
+        <Div class="form">
+        <label for="Namn">Name:</label>
+        <input type="text" id="Namn" required placeholder="Name"> 
+
+        <br><br><label for="Efternamn">Last Name:</label>
+        <input type="text" id="Efternamn" required placeholder="Last Name">
+
+        <br><br><label for="E-post">E-mail:</label>
+        <input type="email" id="E-post" required placeholder="E-mail">
+
+        <br><br> <label for="Födelsedatum">Födelsedatum</label>
+        <input type="date" id="Födelsedatum" placeholder="yymmdd" required>
+        
+            <p>How would you like to pay</p>
+        <br><br> <label for="betalsätt"></label>
+        <input type="text" id="betalsätt" placeholder="payment method">
+       
+        <input type="submit" value="Skicka in">
+
+      </Div>
+</body>
