@@ -1,5 +1,7 @@
 body{
     background-color: rgb(14, 0, 24);
+    overflow-y: hidden;
+    overflow-x: hidden; 
 }
 
 .background{
@@ -83,4 +85,3 @@ body{
         transform:rotate(360deg); 
     }
 }
-

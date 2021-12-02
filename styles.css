@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 
+
 }
 
 html, body {
@@ -13,7 +14,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     background-color: black;
-
+    overflow-y: hidden;
+    overflow-x: hidden; 
 }
 
 .background {
@@ -22,6 +24,7 @@ body {
     position: absolute;
     top: 0;
     z-index: -5;
+    opacity: 60%;
 }
 
 .container {
@@ -34,6 +37,7 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
+    z-index: +1;
 }
 
 .btn {
@@ -42,6 +46,7 @@ body {
     font-size: 1.25rem;
     position: absolute;
     margin: 32px;
+
 }
 
 /* button 1 */
@@ -64,6 +69,7 @@ body {
 
 .btn-1:hover::after {
     transform: translate(-5px, -5px);
+    
 }
 
 .btn-1:hover::before {
@@ -107,7 +113,7 @@ body {
     
 }
 
-.btn-3::after, .btn-1::before {
+.btn-3::after, .btn-3::before {
     border: 3px solid white;
     content: "";
     position: absolute;
@@ -126,7 +132,6 @@ body {
     transform: translate(5px, 5px);
 }
 
-
 /* bunny unicorns*/
 
 h1{
@@ -135,7 +140,7 @@ h1{
     position: absolute;
     align-items: center;
     top: 46%;
-    left: 37%;
+    left: 38%;
     font-size: 4rem;
 }
 
@@ -143,7 +148,7 @@ h1{
 .Bild1 {
     position: absolute;
     top: 20%;
-    left: 43%; 
+    left: 44%; 
     width: 250px;  
 }
 
@@ -155,8 +160,8 @@ h1{
     left: 50%;
     opacity: 15%;
     transform: rotate(30deg);
-
 }
+
 
 .Deco2 {
     position: absolute;
@@ -215,4 +220,149 @@ h1{
     opacity: 30%;
     transform: rotate(-10deg);
 
+}
+
+.Deco8 {
+    position: absolute;
+    width: 700px;
+    top: -30%;
+    left: -20%;
+    opacity: 30%;
+    transform: rotate(-10deg);
+
+}
+
+.Deco9 {
+    position: absolute;
+    width: 100px;
+    top: 30%;
+    left: 40%;
+    opacity: 30%;
+    transform: rotate(-5deg);
+
+}
+
+.Deco10 {
+    position: absolute;
+    width: 140px;
+    top: 46%;
+    left: 37%;
+    opacity: 30%;
+    transform: rotate(35deg);
+
+}
+
+.Deco11 {
+    position: absolute;
+    width: 150px;
+    top: 60%;
+    left: 46.5%;
+    color: white;
+    z-index: +1;
+
+}
+
+.Deco11:hover {
+    animation: swing8 1.5s ease-in-out infinite;
+}
+
+
+/* keyframes */
+@keyframes swing1 {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+
+.Deco1 {
+    animation: swing1 20s ease-in-out infinite;
+}
+
+@keyframes swing2 {
+    0%, 100% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+  }
+
+.Deco3 {
+    animation: swing2 17s ease-in-out infinite;
+}
+
+@keyframes swing3 {
+    0%, 100% { transform: rotate(7deg); }
+    50% { transform: rotate(-7deg); }
+  }
+
+.Deco4 {
+    animation: swing3 25s ease-in-out infinite;
+}
+
+@keyframes swing4 {
+    0%, 100% { transform: rotate(4deg); }
+    50% { transform: rotate(-4deg); }
+  }
+
+.Deco5 {
+    animation: swing4 20s ease-in-out infinite;
+}
+
+@keyframes swing5 {
+    0%, 100% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+  }
+
+.Deco6 {
+    animation: swing5 30s ease-in-out infinite;
+}
+
+@keyframes swing8 {
+    0%, 100% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+  }
+
+  .Deco8 {
+    animation: swing8 25s ease-in-out infinite;
+}
+
+@keyframes swing6 {
+    0%, 100% { transform: rotate(25deg); }
+    50% { transform: rotate(-25deg); }
+  }
+
+.Deco9 {
+    animation: swing6 22s ease-in-out infinite;
+}
+
+@keyframes swing7 {
+    0%, 100% { transform: rotate(14deg); }
+    50% { transform: rotate(-14deg); }
+  }
+
+@keyframes swing8 {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-14deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(14deg); }
+
+}
+
+.Deco10 {
+    animation: swing7 25s ease-in-out infinite;
+}
+
+/* swipe effect */
+.swipeleft{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    width: 1000px;
+    height: 100%;
+    background-color: white;
+}
+
+
+/* swipe */
+
+@keyframes swipeleftkey{
+0% {transform: translate(0, 0);}
+100% {transform: translate(600px, 0);}
 }
